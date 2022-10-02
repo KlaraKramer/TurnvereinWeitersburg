@@ -1,0 +1,434 @@
+header {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.logoline {
+    padding: inherit;
+    margin: inherit;
+    display: inherit;
+    height: 100px;
+}
+
+img {
+    margin: inherit;
+    padding: inherit;
+    display: inherit;
+}
+
+.top {
+    background-image: url("banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 10%;
+    border-bottom: 2px solid #faabab;
+}
+
+.centre {
+    background-color: #faabab;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.border {
+    padding: 4px;
+    border-color: #faabab;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.info {
+    text-align: left;
+}
+
+/* Styling for the top and bottom elements and navbar */
+.headAndFoot {
+    margin: auto;
+    text-align: center;
+    background-color: #b12c2c;
+    width: 100%;
+    border-bottom: 2px solid #faabab;
+    border-top: 2px solid #faabab;
+    color: #d7d6d6;
+}
+
+.startFoot {
+    margin: auto;
+    text-align: center;
+    background-color: #b12c2c;
+    width: 100%;
+    border-bottom: 2px solid #faabab;
+    border-top: 2px solid #faabab;
+    color: #d7d6d6;
+    position: fixed;
+}
+
+.navi {
+    background-color: #36413e;
+}
+
+.navLink:link {
+    color: #d7d6d6;
+    cursor: pointer;
+}
+
+.navLink:visited {
+    color: #d7d6d6;
+}
+
+.navLink:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.sportLink:link {
+    color: #36413e;
+}
+
+.sportLink:visited {
+    color: #780116;
+}
+
+.sportLink:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Banner for index.html */
+#banner {
+    background-color: #780116;
+    color: white;
+    border: 3px solid #faabab;
+    width: 90%;
+    margin: 0 auto 10px auto;
+}
+
+#mainTitle {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.title {
+    text-shadow: 2px 2px black;
+}
+
+/* Image captions (source declarations) for index.html */
+figcaption {
+    font-style: italic;
+    text-align: center;
+    color: inherit;
+}
+
+ul {
+    list-style-type: square;
+    display: inline-block;
+}
+
+.carousel-inner img {
+    margin: auto;
+    max-width: 80%;
+}
+
+/* Styling and unique ID for top title of history.html: */
+#historyTop {
+    font-weight: bold;
+}
+
+/* Styling for table in history.html:
+   Code for creating table borders was adapted from https://www.w3schools.com/html/html_table_borders.asp */
+table, th, td {
+    margin: 0 auto;
+    border: 1px solid #696376;
+    padding: 2px;
+}
+
+.text {
+    text-align: left;
+}
+
+caption {
+    caption-side: top;
+    text-align: center;
+    color: #c5d8f1;
+    background-color: #696376;
+}
+
+.sideCol {
+    background-color: #b12c2c;
+    /*background-image: url("bg.jpg");*/
+    color: #d7d6d6;
+    position: relative;
+    text-align: center;
+}
+
+/* Creation and styling of two columns */
+.leftCol {
+}
+
+.rightCol {
+    text-align: center;
+    position: relative;
+}
+
+/* Link and picture styling for the left column */
+.internalLink:link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.internalLink:visited {
+    color: inherit;
+}
+
+.internalLink:hover {
+    text-decoration: underline;
+    color: #b12c2c;
+}
+
+.zeitschriftLink:link {
+    text-decoration: none;
+    color: #b12c2c;
+    cursor: pointer;
+}
+
+.zeitschriftLink:visited {
+    text-decoration: none;
+    color: #b12c2c;
+}
+
+.zeitschriftLink:hover {
+    text-decoration: underline;
+    color: #780116;
+}
+
+.red {
+    color: #b12c2c;
+}
+
+.picRight {
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    max-width: 70%;
+    height: auto;
+}
+
+.picLeft {
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    max-width: 70%;
+    height: auto;
+}
+
+.picColRight {
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    max-width: 30%;
+}
+
+/* styling and unique IDs for internal link destinations within the left column */
+#top {
+    color: #b12c2c;
+}
+
+#rlpnora {
+    color: #b12c2c;
+}
+
+#fitfrauen {
+    color: #b12c2c;
+}
+
+#gaukinderturnfest22 {
+    color: #b12c2c;
+}
+
+#rollsportlm22 {
+    color: #b12c2c;
+}
+
+#vm22lr {
+    color: #b12c2c;
+}
+
+#gauliga {
+    color: #b12c2c;
+}
+
+#vereinsm {
+    color: #b12c2c;
+}
+
+#kirmes {
+    color: #b12c2c;
+}
+
+#senioren {
+    color: #b12c2c;
+}
+
+#tvm {
+    color: #b12c2c;
+}
+
+#ukraine {
+    color: #b12c2c;
+}
+
+#gaucup {
+    color: #b12c2c;
+}
+
+#rollsport {
+    color: #b12c2c;
+}
+
+#witufe {
+    color: #b12c2c;
+}
+
+#gaucup2 {
+    color: #b12c2c;
+}
+
+#sportabzeichen {
+    color: #b12c2c;
+}
+
+#gauliga2022 {
+    color: #b12c2c;
+}
+
+/* Image captions */
+figcaption {
+    color: #36413e;
+    font-style: italic;
+    text-align: center;
+}
+
+figure-img {
+    max-width: 333px;
+    width:100%;
+}
+
+table, tr, td {
+    text-align: left;
+    border: none;
+    padding-right: 20px;
+}
+
+/* Making the Vorstand table mobile first */
+@media screen and (max-width: 600px) {
+    table thead {
+        display: none;
+    }
+    table td {
+        display: flex;
+    }
+
+    table td::before {
+        content: attr(label);
+        font-weight: bold;
+        width: 120px;
+        min-width: 120px;
+    }
+}
+
+/* The following lines allow the bootstrap horizontal flip card widget to be used in the right column
+   They were adapted from: https://www.webnots.com/bootstrap-flip-card-widget/ */
+
+.image-flip:hover .frontside, .image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.image-flip {
+    width: 90%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside, .backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frontside {
+    position: relative;
+    background-color: inherit;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #faabab;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.image-flip:hover .backside, .image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.card {
+    background-color: inherit;
+    border-radius: 0;
+    margin: auto;
+    text-align: center;
+    max-height: 228.3px;
+}
+
+.card-img {
+    margin: auto;
+    width: 100%;
+    max-height: 228.3px;
+}
