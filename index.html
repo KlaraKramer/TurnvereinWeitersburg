@@ -21,6 +21,14 @@
 
 <body style="background-color: #b12c2c">
 <script>
+    function open25() {
+        var listContents = document.getElementById("list2025");
+        if (listContents.style.display === "none") {
+            listContents.style.display = "block";
+        } else {
+            listContents.style.display = "none";
+        }
+    }
     function open24() {
         var listContents = document.getElementById("list2024");
         if (listContents.style.display === "none") {
@@ -78,7 +86,9 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="chronik.html">Chronik</a>
                     <a class="dropdown-item" href="vorstand.html">Der Vorstand</a>
+                    <a class="dropdown-item" href="turnhalle.html">Die Turnhalle</a>
                     <a class="dropdown-item" href="mitglied.html">Mitglied werden</a>
+                    <a class="dropdown-item" href="abmelden.html">Abmelden</a>
                     <a class="dropdown-item" href="vereinszeitschrift.html">Vereinszeitschrift</a>
                     <a class="dropdown-item" href="images/hallenbelegung.pdf">Hallenbelegungsplan</a>
                 </div>
@@ -112,11 +122,23 @@
         <div class="col-sm-8 my-3 centre">
             <h1 id="top">Der Turnverein 1891 Weitersburg e.V. informiert</h1>
 
-            <p></p>
+            <p><br></p>
 
-            <div class="alert alert-danger" style="width: 60%; margin: auto">
+            <div class="alert alert-warning" style="width: 70%; margin: auto">
                 <span class="badge badge-pill badge-danger">Info</span>
-                <em><a href="#sperrung" class="internalLink">Die Vereinshalle ist wegen Dachschäden bis auf Weiteres gesperrt.</a></em>
+                <em>Der TVW sucht dringend Übungsleiter für die Leistungsriege im Gerätturnen weiblich. Die Gruppe nimmt regelmäßig an Gau- / Verbands- und Rheinland-Pfalz-Meisterschaften teil. Eine Übungsleiter-Lizenz ist nicht erforderlich, jedoch wäre Erfahrung im Turnen und Spaß beim Umgang mit Kindern und Jugendlichen sehr hilfreich!<br>
+                    <b>Trainingszeiten:</b> Montags, 17:00-19:30 und Freitags, 18:00-20:00<br>
+                    Bei Interesse bitte melden unter <b>info@tv-weitersburg.de</b></em>
+            </div>
+
+            <p><br></p>
+
+            <div class="alert alert-warning" style="width: 70%; margin: auto">
+                <span class="badge badge-pill badge-danger">Info</span>
+                <em>Der TVW sucht schnellstmöglich einen Übungsleiter für seine Gruppe „Fitness gestandener Männer“.
+                    Unsere 60+ Akteure wünschen sich jemanden, der altersgerechte „Anti-Rost“- Gymnastik und Zirkeltraining anbieten kann. Ein abschließendes Volleyballspiel sowie die „3. Halbzeit“ im Clubzimmer runden die fröhlichen Montagabende ab.
+                    <br>
+                    Interesse? Bitte melden unter <b>info@tv-weitersburg.de</b></em>
             </div>
 
             <p><br></p>
@@ -124,9 +146,42 @@
             <div class="info">
                 <p></p>
                 <p></p>
-            <h3>Aktuelle Artikel:</h3>
+
+            <h3>Übersicht aktueller Artikel:</h3>
+                <button class="button btnyear" onClick="open25()" id="btn25">2025</button>
+                <ol id="list2025" style="display: none;">
+                    <li><a href="#tvm25" class="internalLink">TG Bendorf- Weitersburg: Drei Siege bei den Mittelrheinmeisterschaften</a></li>
+                    <li><a href="#winterturnfest25" class="internalLink">Super Ergebnisse beim Winterturnfest</a></li>
+                    <li><a href="#gaucup25" class="internalLink">TG Bendorf-Weitersburg: Tolle Leistungen beim Gaucup</a></li>
+                    <li><a href="#mgv25" class="internalLink">Einladung zur Mitgliederversammlung am 28. März 2025 um 20.00 Uhr</a></li>
+                    <li><a href="#danceweihnachten24" class="internalLink">Dance Kids vom TVW feiern Weihnachtsfeier</a></li>
+                </ol>
+                <p></p>
                 <button class="button btnyear" onClick="open24()" id="btn24">2024</button>
-                <ol id="list2024">
+                <ol id="list2024" style="display: none;">
+                    <li><a href="#weihnacht24roll" class="internalLink">Sportliche Weihnachtsfeier beim TVW</a></li>
+                    <li><a href="#rollubernachtung" class="internalLink">TVW Halle Weitersburg hatte Übernachtungsgäste</a></li>
+                    <li><a href="#halloween24" class="internalLink">Dance Kids vom TV Weitersburg feiern Halloween Party</a></li>
+                    <li><a href="#nachwuchspokal24" class="internalLink">Rollkunstläufer des TV Weitersburg beim Breitensport und Nachwuchspokal in Eppingen</a></li>
+                    <li><a href="#mgv24" class="internalLink">Einladung zur Mitgliederversammlung am 22. November 2024 um 20.00 Uhr</a></li>
+                    <li><a href="#tvm24" class="internalLink">TG Bendorf-Weitersburg: Siege und Treppchenplätze bei Verbandsmeisterschaften</a></li>
+                    <li><a href="#dancecamp24" class="internalLink">Dance Kids fahren ins Trainingscamp</a></li>
+                    <li><a href="#jugendbest24" class="internalLink">Rollsportler des TVW erfolgreich beim Jungendbestenwettbewerb</a></li>
+                    <li><a href="#gaupokal24" class="internalLink">TG Bendorf-Weitersburg: Spitzenergebnisse beim Gaupokal</a></li>
+                    <li><a href="#danceeinschulung" class="internalLink">Dance Kids feiern Einschulung</a></li>
+                    <li><a href="#leipzig25invite" class="internalLink">Deutsches Turnfest in Leipzig 2025</a></li>
+                    <li><a href="#gauwanderung24" class="internalLink">Einladung zur Gau-Wanderung</a></li>
+                    <li><a href="#anfangershowgruppe" class="internalLink">Abschlussauftritt der ersten Anfängergruppe Show</a></li>
+                    <li><a href="#rollland24" class="internalLink">Rollkunstlauf Landesmeisterschaft im Regen</a></li>
+                    <li><a href="#rlpcup24" class="internalLink">TG Bendorf-Weitersburg Turnerin Josefine Götz Rheinland-Pfalz-Meisterin!</a></li>
+                    <li><a href="#gauliga24hin" class="internalLink">TG Bendorf-Weitersburg: Super Start in die Gauliga</a></li>
+                    <li><a href="#sommerfest24" class="internalLink">Einladung zum Sommerfest: SPORT - SPIEL - SPASS / 75 Jahre organisierter Sport im Rheinland</a></li>
+                    <li><a href="#kurpokal24" class="internalLink">Bronze, Silber und auch Gold für die Rollsportlerinnen des TV Weitersburg</a></li>
+                    <li><a href="#dsenm24" class="internalLink">TG Bendorf-Weitersburg: 10. Meistertitel für Maike Salewski</a></li>
+                    <li><a href="#beitrag" class="internalLink">Neuerung zum Beitragseinzug: Einzug nur noch vierteljährlich</a></li>
+                    <li><a href="#kirmes24" class="internalLink">TV Weitersburg beim Kirmesumzug</a></li>
+                    <li><a href="#dancecomp24" class="internalLink">Auftritt der Dance Kids Tanzgruppen bei der zweiten Dance Competition</a></li>
+                    <li><a href="#amgv24" class="internalLink">Einladung zur außerordentlichen Mitgliederversammlung am 17. Mai 2024</a></li>
                     <li><a href="#vereinsmeisterschaften24" class="internalLink">Sehenswerte Leistungen bei Vereinsmeisterschaft der Leistungsriege</a></li>
                     <li><a href="#rlpquali24" class="internalLink">Turnerinnen fürs Rheinland-Pfalz-Finale und Deutsche Senioren-Meisterschaften qualifiziert</a></li>
                     <li><a href="#osterdance24" class="internalLink">Frühlingshaftes Osterfest der Dance Kids</a></li>
@@ -138,7 +193,7 @@
                 </ol>
                 <p></p>
                 <button class="button btnyear" onClick="open23()" id="btn23">2023</button>
-                <ol id="list2023">
+                <ol id="list2023" style="display: none;">
                     <li><a href="#sperrung" class ="internalLink">Sperrung der Vereinshalle bis auf Weiteres</a></li>
 					<li><a href="#dancekidsweihnachten23" class="internalLink">Dance Kids Weihnachtsfeier mit Überraschungsbesuch</a></li>
 					<li><a href="#weihnachtstanzfeier23" class="internalLink">Weihnachtsfeier unserer Streetdance Frauen</a></li>
@@ -183,7 +238,7 @@
                 </ol>
                 <p></p>
                 <button class="button btnyear" onClick="open22()" id="btn23">2022</button>
-                <ol id="list2022">
+                <ol id="list2022" style="display: none;">
                     <li><a href="#weihnachtsfrauen" class="internalLink">Weihnachtsfeier der Gymnastikgruppe 60+ des TV Weitersburg</a></li>
                     <li><a href="#danceweihnachten" class="internalLink">Großer Weihnachtsauftritt der Dance Kids</a></li>
                     <li><a href="#bundespokal" class="internalLink">TG Bendorf-Weitersburg: Turnerinnen beim Bundespokal dabei!</a></li>
@@ -213,7 +268,7 @@
                 </ol>
                 <p></p>
                 <button class="button btnyear" onClick="open21()" id="btn23">2021</button>
-                <ol id="list2021">
+                <ol id="list2021" style="display: none;">
                     <li><a href="#sportabzeichen" class="internalLink">TV Weitersburg: 25 Sportabzeichen verliehen</a></li>
                     <li><a href="#rollsporttest" class="internalLink">Bestandene Prüfungen Rollkunstauf TV Weitersburg</a></li>
                     <li><a href="#rlpmeisterschaften" class="internalLink">Turnverein Weitersburg bei den Rheinland-Pfälzischen Landesmeisterschaften</a></li>
@@ -221,7 +276,6 @@
                 </ol>
             </div>
             <p><br></p>
-
 
 
             <!-- Artikel Anfang -->
@@ -236,6 +290,7 @@
                 <p>
                     <em>DATUM</em><br>
                     ARTIKEL TEXT
+                    <br><br>
                 </p>
             </div> -->
             <!-- Artikel Ende -->
@@ -243,53 +298,746 @@
 
             <!-- Artikel Anfang -->
             <div class="info">
-                <h2 id="sperrung">Sperrung der Vereinshalle bis auf Weiteres: Schaden an der Dachkonstruktion der Turnhalle</h2>
+                <h2 id="tvm25">TG Bendorf- Weitersburg: Drei Siege bei den Mittelrheinmeisterschaften</h2>
+                <figure class="picLeft">
+                    <img src="images/tvm251.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="TVM Siegerin Josefine Götz am Schwebebalken">
+                    <figcaption>TVM Siegerin Josefine Götz<br>am Schwebebalken</figcaption>
+                </figure>
                 <p>
-                    <em>14. Dezember 2023</em><br>
-                    Liebe Sportler*innen, <br>
-                    Anfang November bemerkten wir einen Riss in einem der Tragbalken der Dachkonstruktion unserer Halle in der Bendorfer Straße. Der hinzu gerufene Statiker riet aus Sicherheitsgründen zu einer Sperrung der Halle für den Sportbetrieb, was durch den Vorstand unverzüglich umgesetzt wurde.
+                    <em>18. April 2025</em><br>
+                    Mit insgesamt 11 Turnerinnen startete die TG Bendorf- Weitersburg bei den Einzelmeisterschaften des Turnverbands Mittelrhein am vergangenen Wochenende.
+                    <br><br>
+                    Hier trafen sich die besten Turnerinnen der acht Turngaue, um in den verschiedenen Leistungs- und Altersklassen einerseits die besten mittelrheinischen Turnerinnen zu ermitteln, andererseits aber auch, um sich für Rheinland-Pfalz- oder Deutsche Seniorenmeisterschaften weiter zu qualifizieren.
+                    <br><br>
+                </p>
+                <figure class="picRight">
+                    <img src="images/tvm252.JPG" style="width:333px" class="figure-img img-fluid"
+                         alt="Die Seniorinnen">
+                </figure>
+                <p>
+                    In der Wettkampfklasse „Juniorcode“ startete Charlotte Rünz, die vor Kurzem in das Leistungszentrum auf dem Asterstein gewechselt hat. Es ist sehr beeindruckend, was sie in der kurzen Zeit an neuen Elementen gelernt hat: Freie Felge am Barren, Strecksalti an Barren und Boden, Flickflack auf dem Balken und die Kombi Überschlag-Salto vw am Boden – all das gelang Charlotte am Wettkampftag mit Bravour, und sie gewann ihren Wettkampf sehr verdient.
+                    <br><br>
+                    In der Wettkampfklasse LK 2 zeigte Josefine Götz Nervenstärke: nachdem der Barren irrtümlich auf die falsche Weite eingestellt war und sie einen ärgerlichen Zwischenschwung in Kauf nehmen musste, überholte sie dennoch am letzten Gerät, dem „Zitterbalken“, die Konkurrentin aus Mogendorf und siegte mit einem hauchdünnen Vorsprung.
                     <br>
-                    Zum Glück stellte sich heraus, dass der Schaden reparabel ist. Allerdings muss dafür seitens der beauftragten Prüfgesellschaft eine exakte statische Berechnung und ein Sanierungskonzept erstellt werden. Aus Kapazitätsgründen kann diese Vorarbeit dort erst ab Januar erfolgen und wird frühestens im Februar 2024 abgeschlossen sein.
+                    Charlotte und Josefine haben sich damit auch für die Rheinland-Pfalz-Meisterschaften qualifiziert, ebenso wie Lina Haeßer, die bei den erwachsenen Code-Turnerinnen Platz 10 erreichte.
+                    <br><br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/tvm253.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die Turnerin mit Trainerin">
+                </figure>
+                <p>
+                    Die Qualifikation knapp verpasst hat leider Mira Richter, die aber dennoch einen sehr guten Wettkampf turnte (u.a. zweitbeste am Stufenbarren und dritte am Schwebebalken) und sich in einem leistungsstarken Teilnehmerfeld auf Platz 4 schob.
+                    <br><br>
+                    Bei den Seniorinnen setzte sich Maike Salewski gegen ihre Trainingskameradinnen Beate Wingender und Katja Krämer durch. Maike und Beate haben sich damit für die Deutschen Seniorenmeisterschaften qualifiziert, wo Maike ihren Titel als Deutsche Seniorenmeisterin verteidigen möchte.
                     <br>
-                    Erst dann wissen wir, in welcher Art und Weise die Reparatur erfolgen kann. In der Folge sind Angebote von Fachfirmen einzuholen; gegebenenfalls muss auch über eine Finanzierung der Maßnahmen entschieden werden. Wir rechnen also nicht damit, dass wir vor Ende März 2024 unsere wieder Halle nutzen können.
+                    In der W 50 belegte Renate Hiller-Böhm Platz 4 und in der anspruchsvollen LK1 erturnten sich Celina Dott Platz 8 und Lina Schmengler Platz 5.
                     <br>
-                    Der Vorstand hat noch am Tag der Sperrung der Halle erste Kontakte zu Ortsgemeinde, Grundschule, Pfarrgemeinde, dem Möhnenverein, dem Sportverein sowie dem Turnverein Vallendar aufgenommen, um diejenigen Sportangebote, die wir in unserer Halle durchführen, in andere Räumlichkeiten zu verlegen. Eine Übungsleiterin setzte sich mit der Verbandsgemeinde Vallendar in Verbindung mit dem Ziel, vorübergehend einen Raum in der Stadthalle belegen zu können.
+                    Erstmalig zu einem TVM Cup qualifiziert hatte sich Deliya Leppin, die sich bei den „Kleinen“ in der LK 3 den neunten Platz erturnte.
+                    <br><br>
+                </p>
+            </div> 
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="winterturnfest25">Super Ergebnisse beim Winterturnfest</h2>
+                <figure class="picRight">
+                    <img src="images/witufe252.jpg" style="width:250px" class="figure-img img-fluid"
+                         alt="Warten auf die Siegerehrung">
+                </figure>
+                <p>
+                    <em>12. April 2025</em><br>
+                    Pünktlich zum Winterabschluss veranstaltete der Turngau Rhein-Mosel sein Winterturnfest. Der TV Weitersburg war mit seinen allgemeinen Turnriegen am Start. Insgesamt 30 TeilnehmerInnen des TVs trugen zum Melderekord von 350 Kindern und Jugendlichen aus 9 Vereinen bei. In Teilnehmerfeldern von bis zu 60 Turnerinnen pro Jahrgang schafften es erfreulich viele TVW-Kids unter die „Top Ten“:
+                    <br><br>
+                    Platz 1: Emil Schiffer, Lukas Geißler, Benjamin Wahl, Mia Thelen<br>
+                    Platz 2: Helena Herzmann, Jakob Remy, Josefine Meyer, Sophie Geißler<br>
+                    Platz 3: Aliya Wirges, Lou Stettler <br>
+                    Platz 4: Karl Pfitzmaier, Julia Orlovic <br>
+                    Platz 5: Elifya Arslan, Marleen Geisler, Toni Hilland<br>
+                    Platz 6: Mila Cvetkovic, Aurelia Haßlinger<br>
+                    Platz 10: Annabella Santamaria, Lissandra Aglago.
+                    <br><br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/witufe251.jpg" style="width:300px" class="figure-img img-fluid"
+                         alt="Die Turner*innen beim Winterturnfest">
+                </figure>
+                <p>
+                    Das Besondere am Winterturnfest ist, dass die TeilnehmerInnen, die schon mehrfach an der Veranstaltung teilgenommen haben, eine besondere Ehrung und eine Auszeichnung bekommen.
+                    So wurde Josefine Meyer für ihre 6. Teilnahme geehrt, Sophie Geißler, Helena Herzmann und Emil Schiffer für die 4. Teilnahme, und Benjamin Wahl, Lara Gondorf, Julia Orlovic, Karl Pfitzmaier, Aurelia Haßlinger und Lukas Geißler waren zum dritten Mal dabei.
+                    <br><br>
+                    Nun laufen in allen Gruppen die Vorbereitungen auf die Vereinsmeisterschaften und das Gau-Kinderturnfest im Sommer.
+                <br><br><br><br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="gaucup25">TG Bendorf-Weitersburg: Tolle Leistungen beim Gaucup</h2>
+                <figure class="picRight">
+                    <img src="images/gaucup251.jpg" style="width:322px" class="figure-img img-fluid"
+                         alt="Die 'Maxis'">
+                    <figcaption>Die "Maxis"</figcaption>
+                </figure>
+                <p>
+                    <em>02. April 2025</em><br>
+                    Am vergangenen Wochenende starteten die Mädchen der Trainingsgemeinschaft Bendorf-Weitersburg in ihren ersten Wettkampf des Jahres, den Einzelmeisterschaften des Turngaus Rhein-Mosel.
                     <br>
-                    Die Reaktionen aller Angesprochenen waren äußerst positiv, absolut unbürokratisch sowie in hohem Maße entgegenkommend, sodass wir die meisten unserer Sportangebote vorerst unverändert weiterführen können.
+                    Die teilnehmerschwachen Wettkampfklassen mit 3 oder weniger gemeldeten Turnerinnen durften diesmal wegen Kampfrichtermangel nicht am Gaucup teilnehmen. Dies betraf leider ausgerechnet die vier leistungsstärksten Turnerinnen der TG: Celina Dott, Mira Richter, Lina Schmengler und Josefine Götz. Dafür sind alle vier automatisch für den TVM Cup qualifiziert, ebenso wie die Seniorinnen Maike Salewski, Renate Hiller-Böhm, Beate Wingender und Katja Krämer.
                     <br>
-                    Der Turnverein Weitersburg bedankt sich herzlich bei allen daran Beteiligten, insbesondere:
-                    <ul>
-                        <li>
-                            der Ortsgemeinde Weitersburg, hier insbesondere Herrn Ortsbürgermeister Jochen Währ für die Zustimmung zu erweiterten Hallenzeiten in der Schulturnhalle
-                        </li>
-                        <li>
-                            der Grundschule Weitersburg, Herrn Schulleiter Stein für die Bereitschaft, uns die erweiterten Hallenzeiten einzuräumen
-                        </li>
-                        <li>
-                            dem Möhnenverein Lustige Weiber Weitersburg für die vorübergehende Überlassung eigener Hallenzeiten an den Turnverein
-                        </li>
-                        <li>
-                            dem Sportverein SV Victoria Weitersburg, ebenfalls für die vorübergehende Überlassung eigener Hallenzeiten
-                        </li>
-                        <li>
-                            der Stadt Vallendar für die Zurverfügungstellung eines Raums in der Stadthalle
-                        </li>
-                        <li>
-                            der Pfarrgemeinde St. Medard für die Überlassung des Pfarrsaals in Weitersburg
-                        </li>
-                        <li>
-                            dem Turnverein Vallendar für seine Bereitschaft, uns Zeiten in der vereinseigenen Turnhalle in Vallendar anzubieten
-                        </li>
-                        <li>
-                            unseren Mietern der Turnhalle Bendorfer Straße, die mit sehr viel Verständnis auf die zeitweise Schließung reagierten
-                        </li>
-                    </ul>
-                    und nicht zuletzt unseren Mitgliedern und Übungsleitern, die sich teilweise auf andere Übungszeiten und andere Räumlichkeiten einstellen müssen.
+                    Einen hervorragenden Wettkampf turnte die erst 9-jährige Deliya Leppin: sie siegte in der Wettkampfklasse LK 3 durch fehlerfrei geturnte Übungen an den vier olympischen Geräten. Damit hat auch sie sich für den TVM Cup qualifiziert.
+                    <br><br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/gaucup252.jpg" style="width:322px" class="figure-img img-fluid"
+                         alt="Die 'Minis'">
+                    <figcaption>Die "Minis"</figcaption>
+                </figure>
+                <p>
+                    Einen tollen zweiten Platz erturnte sich die gleichaltrige Mia Korth in der Wettkampfklasse P. Mit Lina Staudt, Anne Witteriede und Lola Wilhelm schafften noch 3 weitere Teamkameradinnen einen Platz unter den „Top 10“ dieser Altersklasse, in der insgesamt 25 Kinder am Start waren.
                     <br>
-                    Die Art und Weise, in der die oben Genannten reagiert und geholfen haben, ist ein ermutigendes Zeichen der Solidarität. Der Vorstand des TV Weitersburg bedankt sich nochmals herzlich bei allen Genannten.
+                    Sehr stolz auf ihren dritten Platz können die beiden „Quereinsteigerinnen“ Franziska Goergen und Marcelina Siewert sein: beide turnen erst seit ca. einem Jahr in der Leistungsgruppe und haben in der kurzen Zeit unglaublich viel gelernt!
                     <br>
-                    Sobald wir mehr über Art und Umfang der Reparaturmaßnahmen wissen, werden wir alle Beteiligten unverzüglich informieren.
+                    Weitere „Top 10“- Plätze erreichten Valentina Piwecki und Paulina Banz (4.), Nina Arnautovic und Chiara John (5.) sowie Milla Steil (6.)
+                    <br><br><br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="mgv25">Einladung zur Mitgliederversammlung am 28. März 2025 um 20.00 Uhr</h2>
+                <p>
+                    <!-- <em>14. März 2025</em><br> -->
+                    Am Freitag, dem 28. März 2025, findet um 20.00 Uhr die ordentliche Mitgliederversammlung in unserer Vereinshalle (Bendorfer Straße 33) statt. Hierzu lädt der Vorstand herzlich ein. 
+                    <br><br>
+                    <b>Tagesordnung</b>
+                    <ol>
+                        <li>Eröffnung und Begrüßung</li>
+                        <li>Gedenken an die verstorbenen Mitglieder des Vereins</li>
+                        <li>Feststellung der Beschlussfähigkeit</li>
+                        <li>Beschlussfassung über die Annahme der Tagesordnung</li>
+                        <li>Erstattung der Berichte aus den Bereichen Sport, Finanzen und Geschäftsführung für das Geschäftsjahr 2024</li>
+                        <li>Aussprache zu den Berichten</li>
+                        <li>Bericht der Kassenprüfer</li>
+                        <li>Beschlussfassung über die Verwendung des Jahresergebnisses 2024</li>
+                        <li>Beschlussfassung über die Entlastung des Vorstands für das Geschäftsjahr 2024</li>
+                        <li>
+                            Antrag des Vorstands auf Änderung der Vereinssatzung:<br>
+                            § 8 (Mitgliederversammlung)<br>
+                            § 9 (Vorstand)<br>
+                            Aussprache und Beschlussfassung (die derzeit gültige Satzung finden Sie auf der Website des Vereins unter der Rubrik <a href="mitglied.html" class="zeitschriftLink">„Unser Verein – Mitglied werden“</a>)
+                        </li>
+                        <li>Verschiedenes</li>
+                    </ol>
+                    Im Anschluss an den offiziellen Teil wollen wir bei Essen und Trinken beisammenbleiben und einen gemütlichen Abend mit angenehmen Gesprächen verbringen. Wir würden uns freuen, wenn möglichst viele Mitglieder – auch Eltern der bei uns Sport treibenden Kinder - ihr Interesse am Turnverein mit ihrer Anwesenheit zeigen.     
+                    <br><br>    
+                    Der Vorstand
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="danceweihnachten24">Dance Kids vom TVW feiern Weihnachtsfeier</h2>
+                <figure class="picRight">
+                    <img src="images/danceweihnachten24.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Weihnachtsfeier der Dance Kids">
+                </figure>
+                <p>
+                    <em>5. Januar 2025</em><br>
+                    Es ist schon zur Tradition geworden, dass die Dance Kids vom TV Weitersburg ihre jährliche Weihnachtsfeier nutzen, um daraus ein großes Fest für Freunde und Familie zu machen. Und so kamen auch dieses Mal kurz vor Weihnachten fast 100 Leute in der Vereinshalle vom TVW zusammen, um sich mit den Dance Kids auf Weihnachten einzustimmen. Für leckere Köstlichkeiten war am Buffett gesorgt, wo es Kaffee, Kuchen, Snacks und frisch gebackene Waffeln gab. Highlight der Weihnachtsfeier waren natürlich die Auftritte der Dance Kids. Die Minis und Maxis führten jeweils zwei Tänze auf. Darunter auch die beiden Neuheiten „Can´t stop the feeing“ und „Delicate“.
+                    <br><br><br><br>
+                </p>
+            </div> 
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="weihnacht24roll">Sportliche Weihnachtsfeier beim TVW</h2>
+                <figure class="picLeft">
+                    <img src="images/weihnacht24roll.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Eine Collage aus Fotos von der Feier">
+                </figure>
+                <p>
+                    <em>17. Dezember 2024</em><br>
+                    Am vergangenen Wochenende folgte die Abteilung Rollkunstlauf des TVW der Einladung des Rollkunstlauf Fördervereins Weitersburg, um mit allen Vereinen der Gegend eine gemeinsame Weihnachtsfeier zu erleben.
+                    <br><br>
+                    Seit einigen Wochen stellten die Kinder mit ihren Trainern ein abwechslungsreiches Showprogramm auf die Beine. Mit Gruppendarbietungen zu Musik von James Bond, Alles steht Kopf, Morgendämmerung und The Greatest Showman begeisterten die kleinen und großen Läufer das Publikum. Außerdem zeigten die Spitzenläufer der Vereine auch noch Einzel-Programme zu Curella, Moulin Rouge, Anastasia, sowie ihre Küren. Zum Abschluss lief die größte Gruppe des Abends ein tolles Stück zu All I Want For Christmas. Nun konnten alle nach dem gemeinsamen Aufräumen mit wundervoller Weihnachtsstimmung nach Hause gehen.
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="rollubernachtung">TVW Halle Weitersburg hatte Übernachtungsgäste</h2>
+                <figure class="picRight">
+                    <img src="images/rollubernachtung1.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Die Rollsportlerinnen beim Üben">
+                </figure>
+                <p>
+                    <em>02. Dezember 2024</em><br>
+                    Ende November übernachteten die Rollsportler während eines erfolgreichen Lehrgangs in der vereinseigenen Turnhalle. Schon Tage vor dem Lehrgang waren die Kinder sehr aufgeregt. Zwei Tage ständig auf Rollschuhen standen an, und dann wurde sogar noch in der Turnhalle übernachtet.
                     <br>
+                    Bei diesem erstmals stattfindenden Gruppen- Showlehrgang wurden die Stücke für die Weihnachtsfeier aufgestellt. So auch von der Anfänger-Showgruppe, die sich bereits letztes Jahr gebildet hatte. Ihr neues Thema lautet „Alles steht Kopf“ nach dem gleichnamigen Kinofilm. Sehr gut stellen die Läuferinnen die verschiedenen Emotionen wie Freude, Ärger und Kummer dar.
+                    <br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/rollubernachtung2.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die Übernachtungsgruppe">
+                </figure>
+                <p>
+                    Traditionell werden nach der Wettkampfsaison Show Stücke aufgestellt um einem Trainingsloch vorzubeugen. Hierbei haben die Kinder und Jugendlichen viel Spaß und bringen zahlreiche eigenen Ideen mit ein.
+                    <br>
+                    Der Lehrgang begann am Samstagvormittag in Höhr-Grenzhausen, wo sich alle Eltern und Kinder für eine kurze Begrüßung und ein gemeinsames Einlaufen trafen. Danach folgten in der geteilten Halle zwei intensive Trainingsblöcke gefolgt von einer ausführlichen Mittagspause, die die Kinder gemeinsam verbrachten und sehr genossen. Nach weiteren Trainingsblöcken liefen die verschiedenen Gruppen am Ende des ersten Tages nacheinander ihre Stücke durch, wobei die Kinder gegenseitig anschauen konnten, was bereits erarbeitet wurde.
+                    <br>
+                    Nach dem gemeinsamen Aufräumen fuhren die Kinder nun in die vereinseigene Halle des Turnverein Weitersburg. Hier turnten die Kinder ohne Rollschuhe direkt weiter, sie spielten, tanzten und hatten jede Menge Spaß. Zum Abendessen wurde gemeinsam Pizza gebacken, die Allen prima schmeckte. Als dann auch die Betten aufgebaut waren, schauten die müden Kinder gemeinsam den Film „Alles steht Kopf 2“, bevor um 23 Uhr alle schliefen.
+                    <br>
+                </p>
+                <figure class="picRight">
+                    <img src="images/rollubernachtung3.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Die Gruppe beim gemeinsamen Essen">
+                </figure>
+                <p>
+                    Mit Musik wurden die Kinder am Sonntagmorgen geweckt. Nach dem Frühsport stärkte das gemeinsame Frühstück, alle müden Kinder sehr gut. Die Eltern halfen beim Aufräumen, bevor die Kinder wieder nach Höhr-Grenzhausen gebracht wurden. Dort ging es am zweiten Tag etwas langsamer vonstatten. Das Wiederholen des am Vortag erlernten stand auf dem Programm. Mit vielen kleinen (Reste-Essen) Pausen meisterten die Kinder von sechs bis 14 Jahren auch den zweiten Tag mit Bravour.
+                    <br>
+                    Hauptsächlich ging es den Trainern und Betreuern bei diesem Lehrgang darum, das gemeinsame Miteinander noch mehr zu stärken. Dieses Ziel konnten Yaden, Tatjana, Andrea und Sandra mit der gemeinsamen Hilfe der Eltern zu 100 Prozent erreichen. Nun freuen sich alle auf die Weihnachtfeier mit Show-Programm am 15. Dezember.
+                    <br><br>
+                </p>
+            </div> 
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="halloween24">Dance Kids vom TV Weitersburg feiern Halloween Party</h2>
+                <figure class="picLeft">
+                    <img src="images/halloween24.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die Tänzer*innen im Halloween-Kostüm">
+                </figure>
+                <p>
+                    <em>5. November 2024</em><br>
+                    Auch in diesem Jahr haben die Dance Kids Mädchen vom TV Weitersburg gemeinsam mit einigen Eltern und ihrer Trainerin eine Halloween Party gefeiert. Alle Kinder und sogar die Erwachsenen kamen verkleidet und sahen super aus. Zwei Stunden lang tanzten Hexen, Zombies und Zauberer durch die liebevoll dekortierte Vereinshalle. Als Stärkung stand ein leckeres Grusel-Buffett zur Verfügung für das alle Kinder und Eltern etwas mitgebracht hatten. Wer wollte konnte zusätzlich schaurige Halloween Bilder ausmalen und diese als Erinnerung mit nach Hause nehmen. 
+                    <br><br>
+                    Alle waren sich einig, dass das im nächsten Jahr wiederholt werden muss!
+                    <br><br><br><br><br><br>
+                </p>
+            </div> 
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="nachwuchspokal24">Rollkunstläufer des TV Weitersburg beim Breitensport und Nachwuchspokal in Eppingen</h2>
+                <figure class="picRight">
+                    <img src="images/nachwuchspokal24.jpg" style="width: 222px" class="figure-img img-fluid"
+                         alt="Die Rollkunstläuferinnen mit Trainerin Heidrun Schneider">
+                </figure>
+                <p>
+                    <em>5. November 2024</em><br>
+                    Aufgrund der herausragenden Leistungen in diesem Jahr, wurden die beiden Rollkunstläufer Mia Bach und Sophie Geißler für den Süddeutschen Breitensport und Nachwuchspokal in Eppingen nominiert.
+                    <br>
+                    Somit hatten sie am letzten Wochenende die Ehre den RLP Landesverband zu vertreten.
+                    <br>
+                    Dabei konnte Mia in der Klasse Freiläufer 2 ihre bisher beste Leistung abrufen und erreichte den 5. Platz (von 15).
+                    <br>
+                    Auch Sophie konnte sich bei starker Konkurrenz in der Nachwuchsklasse Damen mit einer super Performance beweisen und hat einen tollen 10 Platz (von 17) gemacht.
+                    <br><br>
+                    Der Turnverein Weitersburg ist sehr stolz, dass seine Sportler auch an überregionalen Wettkämpfen wie diesem, Erfolge vorweisen können.
+                    <br><br>
+                    Ein ganz besonderes Dankeschön der Eltern, geht an die Weitersburger Trainerin Heidrun Schneider und Fachwartin Sandra Wilhelmi für ihre Unterstützung.
+                    <br><br>
+                </p>
+            </div> 
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="mgv24">Einladung zur Mitgliederversammlung am 22. November 2024 um 20.00 Uhr</h2>
+                <p>
+                    <em>4. November 2024</em><br>
+                    Am Freitag, dem 22. November 2024 findet um 20 Uhr in unserer Vereinshalle (Bendorfer Straße 33) die ordentliche Mitgliederversammlung statt. Hierzu lädt der Vorstand herzlich ein.<br><br>
+                    <b>Tagesordnung</b>
+                    <ol>
+                        <li>Eröffnung und Begrüßung</li>
+                        <li>Gedenken an die verstorbenen Mitglieder des Vereins</li>
+                        <li>Feststellung der Beschlussfähigkeit</li>
+                        <li>Beschlussfassung über die Annahme der Tagesordnung</li>
+                        <li>Erstattung der Berichte aus den Bereichen Sport, Finanzen und Geschäftsführung für das Geschäftsjahr 2023</li>
+                        <li>Aussprache zu den Berichten</li>
+                        <li>Bericht der Kassenprüfer</li>
+                        <li>Wahl des Versammlungsleiters</li>
+                        <li>Beschlussfassung über die Entlastung des Vorstands für das Geschäftsjahre 2023</li>
+                        <li>Neuwahl des Vorstands</li>
+                        <li>Wahl der Kassenprüfer</li>
+                        <li>Verschiedenes</li>
+                    </ol>
+                    Im Anschluss an den offiziellen Teil wollen wir bei Essen und Trinken beisammen bleiben und einen gemütlichen Abend mit angenehmen Gesprächen verbringen. Wir würden uns freuen, wenn möglichst viele Mitglieder – auch Eltern der bei uns Sport treibenden Kinder - ihr Interesse am Turnverein mit ihrer Anwesenheit zeigen.
+                    <br><br>
+                    Der Vorstand
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="tvm24">TG Bendorf-Weitersburg: Siege und Treppchenplätze bei Verbandsmeisterschaften</h2>
+                <figure class="picLeft">
+                    <img src="images/tvm241.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die siegreichen „Minis“ der P9">
+                    <figcaption>Die siegreichen „Minis“ der P9</figcaption>
+                </figure>
+                <p>
+                    <em>6. Oktober 2024</em><br>
+                    Bei den Mannschaftswettkämpfen des Turnverbands Mittelrhein in Hermeskeil am vergangenen Wochenende starteten Turnerinnen der TG Bendorf-Weitersburg in insgesamt 5 Mannschaften.
+                    <br>Das anspruchsvollste Programm gemäß dem Code de pointage turnten Lina Haeßer, Sandra Wingender und Isabella Chetik in einer Wettkampfgemeinschaft mit dem TV 05 Baumbach. Die Mädchen starteten erstmals in dieser Wettkampfklasse, belegten den dritten Platz und qualifizierten sich damit für die Rheinland-Pfalz-Meisterschaften im November.
+                    <br>In der jahrgangsoffenen Klasse LK2 fehlte eine Turnerin krankheitsbedingt. Theresa Krämer, Laura Hoffmann, Merle Schmengler, Julia und Anja Wingender gaben alles, um den Ausfall zu kompensieren, dennoch reichte es am Ende „nur“ für Platz 2.
+                    <br><br>
+                </p>
+                <figure class="picRight">
+                    <img src="images/tvm242.JPG" style="width:333px" class="figure-img img-fluid"
+                         alt="Die Turnerinnen der LK 2 und 3">
+                    <figcaption>Die Turnerinnen der LK 2 und 3</figcaption>
+                </figure>
+                <p>
+                    In der jahrgangsbegrenzten Klasse LK 2 verstärkten Lina Schmengler, Marla Tulimiero und Lucy Pöhr die Mannschaft des TV Baumbach und wurden Verbandsmeisterinnen! Lucy Pöhr konnte hier die inoffizielle Einzelwertung für sich entscheiden.
+                    <br>Einen sehr guten 2. Platz erkämpften sich die U-12 Mädchen in der LK 3: Chiara John, Franziska Goergen, Deliya Leppin, Aurelia und Solea Alsbach nahmen zum ersten Mal an einer TVM Mannschaftsmeisterschaft teil und machten ihre Sache prima. Solea glänzte zudem mit der besten Boden- und Balkenwertung in diesem Wettkampf.
+                    <br>Mit großem Abstand siegten Mira Richter, Charlotte Rünz, Josefine Götz und ihre Baumbacher Teamgefährtin Rosa Lubczynski in der jüngsten Pflichtklasse U 11. Dabei turnten die vier Mädels bereits an fast allen Geräten die höchstmögliche Schwierigkeitsstufe „P9“ und ließen damit die Konkurrenz weit hinter sich. Charlotte lieferte hier mit sagenhaften 67,65 Punkten das beste Einzelergebnis des Wettkampfs – herzlichen Glückwunsch!
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="dancecamp24">Dance Kids fahren ins Trainingscamp</h2>
+                <figure class="picLeft">
+                    <img src="images/dancecamp24.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Die Tänzer*innen mit Trainerin">
+                </figure>
+                <p>
+                    <em>30. September 2024</em><br>
+                    Letzten Freitag war die Aufregung bei 18 der über 20 Dance Kids Mädchen sehr groß. Zusammen mit ihrer Trainerin haben sie sich auf den Weg nach Mayen in die Vulkanpark Jugendherberge zum dreitägigen Trainingscamp gemacht. Neben dem Erlernen eines neuen Tanzes standen noch jede Menge weitere Aktivitäten auf dem Programm. Nach ihrer Ankunft bezogen die Dance Kids ihre Zimmer, packten aus und erkundeten „ihr Wochenend-Zuhause“. Nach dem gemeinsamen Abendessen ließ die Gruppe den ersten Tag mit einem Lagerfeuer und Stockbrot ausklingen. Der Samstag startete nach dem Frühstück sportlich, denn Trainerin Dajana hatte ein Frühsportprogramm mit Joggingrunde für ihre Tanzmädchen vorbereitet. Und dann wurde endlich getanzt und die Mädchen konnten die neue Choreografie erlernen. Am Nachmittag folgte eine zweite Trainingseinheit und der Samstag endete mit einer gemeinsamen Disco, zu der sich alle richtig in Schale geworfen haben. Am letzten Tag standen dann noch mal Training und ein gemeinsames Mittagessen auf dem Plan, bevor die Gruppe von ihren Eltern abgeholt wurde. Damit endete das gemeinsame Wochenende, das den Mädchen bestimmt noch lang in Erinnerung bleiben wird.
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="jugendbest24">Rollsportler des TVW erfolgreich beim Jungendbestenwettbewerb</h2>
+                <figure class="picRight">
+                    <img src="images/jugendbest241.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die Starter*innen des Wettbewerbs">
+                </figure>
+                <p>
+                    <em>24. September 2024</em><br>
+                    Und noch einmal Landau! Diesmal zum Jugendbestenwettbewerb. Dafür haben drei Weitersburger  hart trainiert und sich schwer ins Zeug gelegt.
+                    <br><br>Vor Ort haben sich die Läufer des Turnverein Weitersburg  gemeinsam mit den Trainingskollegen aus Höhr-Grenzhausen eingeschworen.
+                    <br><br><b>Mia Bach</b> konnte sich in der Kategorie Freiläufer 2 über den 3. Platz freuen, <b>Sophie Geißler</b> holte in der Nachwuchsklasse Damen einen hervorragenden 2. Platz und <b>Fynn Hahn</b> belegte den 5. Platz in der Kategorie Freiläufer 3.
+                    <br><br>
+                <!-- </p>
+                <figure class="picLeft"></figure>
+                    <img src="images/jugendbest242.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die Starter*innen mit ihren Medaillen">
+                </figure>
+                <p> -->
+                    Dies war der letzte Wettkampf für dieses Jahr, was nicht heißt, dass die Sportler pausieren. Der Fokus liegt in den nächsten Wochen auf dem Einüben neuer  Sprünge und Elemente für die nächste Saison. Zusätzlich werden neue Show Gruppen aufgestellt. Die neuen Küren werden voraussichtlich zur Weihnachtsfeier vorgestellt.
+                    <br><br>
+                </p>
+            </div> 
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="gaupokal24">TG Bendorf-Weitersburg: Spitzenergebnisse beim Gaupokal</h2>
+                <figure class="picLeft">
+                    <img src="images/gaupokal24.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Die siegreichen „Minis“: Anne, Lilli, Lola, Mia, Ella, Magdalena">
+                    <figcaption>Die siegreichen „Minis“:<br>Anne, Lilli, Lola, Mia, Ella, Magdalena</figcaption>
+                </figure>
+                <p>
+                    <em>21. September 2024</em><br>
+                    Viermal Platz1 und einmal Platz 3 lautete das tolle Endergebnis für die Turnerinnen der TG Bendorf- Weitersburg beim diesjährigen Gaupokal in Boppard.
+                    <br>Nach einer ultrakurzen Vorbereitungszeit –nach den Sommerferien verblieben nur 3 Trainingswochen– mussten sich die Teams bereits beim Gaupokal in Boppard präsentieren. Hier ging es bei den Größeren um die Qualifikation zum TVM Pokal, wo nur die erstplatzierte Mannschaft pro Wettkampfklasse antreten darf.
+                    <br>Dies schaffte souverän die jahrgangsoffene Mannschaft der LK2 . Alle Turnerinnen sind 16 Jahre oder älter, und es macht große Freude, den Mädels bei ihren ausdrucksstarken Übungen zuzuschauen.
+                    <br>Auch die U12 Mannschaft der LK3 löste das Ticket für die TVM Meisterschaften. Einige der Mädels turnten zum ersten Mal im Kürbereich, und so diente der Wettkampf auch zur Standortbestimmung, welche Trainingsschwerpunkte in den nächsten Wochen gesetzt werden müssen.
+                    <br>
+                    <br>Einen guten dritten Platz erkämpften sich die U15 Mädchen, die gegen die sehr starke Konkurrenz aus Koblenz und Lay antraten.
+                    <br>Die größte Überraschung des Tages lieferten allerdings die Allerjüngsten aus der Fördergruppe: alle Mädchen erwischten einen richtig guten Wettkampftag, bei dem fast alles noch besser gelang als im Training! Somit gewannen sie den Wettkampf mit einem knappen Vorsprung vor drei starken Mannschaften der CTG Koblenz– das hatten weder die Kinder, die Trainer noch die Eltern erwartet!
+                    <br>Einige unserer Mädchen starten in diesem Jahr wieder in Mannschaften des TV Baumbach. Auch diese Kooperation verlief sehr erfolgreich: alle Mannschaften mit Beteiligung von TG Mädchen landeten beim Gaupokal im Westerwald auf Platz 1, so dass ein großer Teil der Turnerinnen aus Bendorf und Weitersburg beim TVM Pokal in 2 Wochen in Hermeskeil antreten darf.
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="danceeinschulung">Dance Kids feiern Einschulung</h2>
+                <figure class="picRight">
+                    <img src="images/danceeinschulung.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Die neuen Schulkinder">
+                </figure>
+                <p>
+                    <em>2. September 2024</em><br>
+                    Eine aufregende Woche liegt hinter Lennya, Pauline, Finja, Romy, Carla und Philina. Für diese sechs Mädchen startete letzten Dienstag die Schulzeit. Dieses besondere Ereignis feierten die Tänzerinnen nicht nur mit ihren Freunden und der Familie, sondern auch mit ihren Dance Kids Tanzfreundinnen und mit Trainerin Dajana. Zur Freude der Mädchen gab es auch kleine Geschenke, die den Schulstart versüßen sollen. <br>
+                    Wir wünschen den Mädchen alles Gute für ihre Schulzeit, tolle und spannende Erlebnisse und viele neue Freunde.
+                    <br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="leipzig25invite">Deutsches Turnfest in Leipzig 2025</h2>
+                <p>
+                    <em>22. August 2024</em><br>
+                    Der TVW plant eine Fahrt zum Deutschen Turnfest in Leipzig vom 27.5. bis 1.6. 2025.<br>
+                    Wer Interesse hat, mitzufahren, meldet sich bitte bei <b>katja.kraemer@tv-weitersburg.de</b>
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="gauwanderung24">Einladung zur Gau-Wanderung</h2>
+                <p>
+                    <em>24. Juli 2024</em><br>
+                    Liebe Turn- und Wanderfreunde,<br><br>
+                    am Samstag, 17. August 2024 findet unsere 37. Gau-Wanderung statt, zu der wir hiermit herzlich einladen.<br>
+                    Wir freuen uns sehr, dass der TV Vallendar die Wanderung ausrichtet und gemeinsam mit unserem Fachwart Rainer Böckling durchführt. Zwei Routen stehen zur Auswahl.<br>
+                    Die Ausschreibung mit weiteren Informationen erhalten Sie beigefügt. Gerne teilen und weiterleiten.<br><br>
+                    Eine Anmeldung ist nur für Gruppen notwendig, damit der Ausrichter für das anschließende gemütliche Beisammensein besser planen kann.<br><br>
+                    Wir wünschen eine schöne Sommerzeit und freuen uns über viele Mitwanderer.
+                    <br><br>
+                    Sportliche Grüße<br>
+                    Turngau Rhein-Mosel e.V.
+                    <br><br>
+                    Petra Gotthard<br>
+                    Geschäftsstelle
+                    <br><br>
+                </p>
+                <p>
+                    <embed align="center" src="images/Gau-Wanderung 2024.pdf" width="400px" height="600px" margin-left="auto" margin-right="auto" />
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+            
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="anfangershowgruppe">Abschlussauftritt der ersten Anfängergruppe Show</h2>
+                <figure class="picLeft">
+                    <img src="images/anfangershowgruppe.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Schlussbild der Anfängershowgruppe">
+                </figure>
+                <p>
+                    <em>21. Juli 2024</em><br>
+                    Zum Ende des Schuljahres beendete auch die Anfänger Showgruppe Rollkunstlauf des TV Weitersburg und der SF Höhr-Grenzhausen ihre Saison. Zum ersten Mal seit langem gab es für Anfänger auf Rollschuhen die Möglichkeit in einer Showgruppe zu trainieren. Hier kommt es darauf an, zu einem Thema möglichst synchron und zum Takt der Musik die verschiedenen Positionen zu zeigen. Die Kinder zwischen fünf und 14 Jahren trainierten die Grundlangen des Showlaufens nun ein Jahr zu dem Thema 101 Dalmatiner. Nun war es soweit und die Gruppe konnte ihr Können bei einer kleinen Abschlussveranstaltung vor Familien und Freunden präsentieren. Außerdem wurden auch verschiedene Einzelküren gezeigt, bei der viele Kinder zum ersten Mal vor Publikum auftraten. <b>Marla, Marie-Sophie, Mia, Luise, Klara, Johanna, Alexandra, Luca, Elida, Romy und Merle</b> begeisterten das Publikum. Danach gingen alle in verdiente Sommerferien, bevor im Herbst ein neues Stück eingeübt wird. Die Gruppe und ihre Trainerin Sandra Wilhelmi streben für nächstes Jahr, die Teilnahme an einer Meisterschaft an.
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="rollland24">Rollkunstlauf Landesmeisterschaft im Regen</h2>
+                <figure class="picRight">
+                    <img src="images/rollland241.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Gruppe Mini II">
+                    <figcaption>Gruppe Mini II</figcaption>
+                </figure>
+                <p>
+                    <em>21. Juli 2024</em><br>
+                    Am 22. Juni 2024 fand die Landesmeisterschaft RLP im Rollkunstlaufen in Landau statt. Hier nahmen drei Läuferinnen des Turnverein Weitersburg teil. Durch die längere Fahrzeit ging es schon sehr früh Richtung Landau Rollschuhbahn los. Hier erwartete die Teilnehmer und Ihre Eltern leider starker Regen, wodurch das Einlaufen aller Vereine in die Halle verlegt wurde. Immer wieder wechselten die Wettbewerbe an diesem Tag von Freiluftbahn zur Halle. 
+                    <br>Platz für Zuschauer gab es in der Halle sehr wenig, weswegen man von den Wettbewerben wenig mit bekam. Den Umständen angepasst reagierte der Landauer Verein souverän und lies die Siegerehrung nicht wie regulär, für alle am Abend stattfinden, sondern zeitnah nach den einzelnen Wettbewerben. 
+                </p>
+                <figure class="picLeft">
+                    <img src="images/rollland242.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Gute Laune trotz Regen, beim Zurechtmachen der Kinder">
+                    <figcaption>Gute Laune trotz Regen,<br>beim Zurechtmachen der Kinder</figcaption>
+                </figure>
+                <p>
+                    <br><br><br>
+                    So konnten die Familien etwas zeitiger dem Regen entfliehen. Die Leistungen der Weitersburger Läufer waren herausragend. Merle Wilhelmi (Mini II), Mia Bach (Freiläufer II) und Sophie Geißler (Nachwuchsklasse Damen) belegten alle den zweiten Platz in ihren Gruppen. Dreimal Silber für den TVW. Trotz des durchwachsenen Wetters, hatten Eltern und Kinder einen schönen Tag in Landau, bei dem sie vom ASV Landau wie immer bestens verköstigt wurden. Die nächste Meisterschaft findet am 21. September wieder in Landau statt.
+                    <br><br><br><br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="rlpcup24">TG Bendorf-Weitersburg Turnerin Josefine Götz Rheinland-Pfalz-Meisterin!</h2>
+                <figure class="picRight">
+                    <img src="images/rlpcup241.jpg" style="width:255px" class="figure-img img-fluid"
+                         alt="Josefine und Charlotte">
+                    <figcaption>Josefine und Charlotte</figcaption>
+                </figure>
+                <p>
+                    <em>8. Juli 2024</em><br>
+                    Gleich 3 Turnerinnen der TG Bendorf- Weitersburg durften am vergangenen Wochenende am Rheinland-Pfalz-Finale teilnehmen. Dies ist durchaus keine Selbstverständlichkeit: hier dürfen nach anstrengenden Qualifikationsrunden über Gau- und Verbandsmeisterschaften nur die besten Mädchen einer Jahrgangs-/Wettkampfklasse teilnehmen. 
+                    <br><br>Mira Richter startete in der anspruchsvollen Kürklasse LK 2 – dies ist die für ihr Alter schwierigste ausgeschriebene Wettkampfklasse. Dementsprechend leistungsstark war die Konkurrenz- nicht wenige der Mädchen kamen aus den Spitzensport-Zentren unseres Bundeslandes. Mira turnte einen guten Wettkampf und konnte in puncto „Schwierigkeit“ durchaus mithalten. Sie schloss mit einem sehr guten 8. Platz ab und ließ ihre Konkurrentin aus Boppard, die bei den Mittelrhein-Meisterschaften noch vor ihr lag, diesmal hinter sich.
+                    <br><br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/rlpcup242.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Mira Richter am Stufenbarren">
+                    <figcaption>Mira Richter am Stufenbarren</figcaption>
+                </figure>
+                <p>
+                    Für den P(flicht)-Wettkampf hatten sich vorab Charlotte Rünz (über den TV Baumbach) und Josefine Götz (für den TV Weitersburg) qualifiziert. Beide turnen inzwischen am Boden, Sprung und Schwebebalken die höchstmögliche Stufe „P9“ und am Stufenbarren die zweithöchste Stufe „P8“. Gleich am ersten Gerät, dem Boden, starteten sie mit Platz 1 (Fine) und Platz 3 (Charlotte). Am Sprung fehlte beiden etwas der Schwung (5. und 7.). Dafür lieferten sie am Stufenbarren wieder die besten Wertungen (Charlotte 1. und Fine 2.). Nervenstärke bewiesen beide am letzten Gerät, dem Schwebebalken: hier ohne Absteiger durchzukommen, ist eine tolle Leistung, die beiden gelang (punktgleich Platz 2).
+                    <br><br>Große Freude dann bei der Siegerehrung: Josefine gewann den Wettkampf vor der Turnerin aus der Talentschmiede TSG Haßloch, und Charlotte ergatterte sich den Bronzerang – herzlichen Glückwunsch!
+                    <br><br><br><br><br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="gauliga24hin">TG Bendorf-Weitersburg: Super Start in die Gauliga</h2>
+                <figure class="picRight">
+                    <img src="images/gauliga24hin1.jpg" style="width:400px" class="figure-img img-fluid"
+                         alt="Die beiden jüngsten Mannschaften der Wettkampfklassen 2013, 2014 und jünger">
+                    <figcaption>Die beiden jüngsten Mannschaften<br>der Wettkampfklassen 2013, 2014 und jünger</figcaption>
+                </figure>
+                <p>
+                    <em>30. Juni 2024</em><br>
+                    Mit insgesamt 6 Mannschaften sind die Turnerinnen der TGBW in die diesjährige Gauliga gestartet. 
+                    <br><br>
+                    4 x Platz 1 und 2 x Platz 4 lautete das erfreuliche Zwischenergebnis nach der Hinrunde in Moselweiß.
+                    Besonders eng ging es dabei in der Wettkampfklasse 2012 und jünger zu: Zwischen Platz 3 und 5 lagen kaum 2 Punkte, und die Weitersburger Turnerinnen konnten sich trotz eines krankheitsbedingten Ausfalls Platz 4 erkämpfen – durchaus noch mit der Perspektive, mit einem vollen Team in der Rückrunde noch das eine oder andere Pünktchen gutzumachen.
+                    Ebenfalls auf Platz 4 landeten unsere allerjüngsten Turnerinnen. Diese Mädchen trainieren alle erst seit kurzer Zeit zusammen; zudem waren sie das jüngste unter den 7 angetretenen Teams im Jahrgang 2014 und jünger – ein tolles  Ergebnis!
+                    <br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/gauliga24hin2.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Die jungen Turnerinnen am Boden">
+                </figure>
+                <p>
+                    Auf Platz 1 mit fast 5 Punkten Vorsprung landete das Team der Altersklasse 2013 und jünger – und das, obwohl auch hier ein Mädchen mit Grippesymptomen zu Hause bleiben musste. Eine grandiose Leistung von dem restlichen Team, das buchstäblich „alles“ gegeben hat und nahezu fehlerfrei durch den Wettkampf kam!
+                    Nachmittags starteten dann die älteren Mädchen in den LK (Kür)-Klassen. Dass Turnen sehr verbinden kann, zeigte die Gruppe 2009 und jünger: hier hatte die TG eine Wettkampfgemeinschaft gebildet mit dem TV Vallendar. Die Mädchen kennen sich privat und aus der Schule und fanden es toll, auch einmal miteinander statt gegeneinander anzutreten – mit großem Erfolg, denn die Gruppe endete auf dem 1. Platz.
+                    <br><br>
+                    Ebenfalls 1. wurden die Mädchen der LK 1 und – überraschend – auch die Mädels der LK 2, die mit einem hauchdünnen Vorsprung von wenigen Zehnteln vor den favorisierten Mädchen aus Koblenz endeten – da wird die Rückrunde im Herbst spannend…
+                    <br><br>
+                    Es turnten:<br>
+                    <b>2014 u.jü:</b> Anne Witteriede, Mia Korth, Lola Wilhelm, Ella Zwick, Magdalene Bischoff, Valentina Piwecki<br>
+                    <b>2013 u.jü:</b> Charlotte Rünz, Mira Richter, Josefine Götz, Deliya Leppin, Franziska Goergen, Chiara John<br>
+                    <b>2012:</b> Milla Steil, Solea Alsbach, Aurelia Alsbach, Lotta Gelhard, Pauline Unckell<br>
+                    <b>2009 u jü:</b> Marla Tulimiero, Lina Schmengler<br>
+                    <b>LK 2:</b> Merle Schmengler, Julia Wingender, Hannah Thurn, Lisa Hoffmann, Laura Hoffmann, Lucy Pöhr<br>
+                    <b>LK1:</b> Celina Dott, Theresa Krämer, Nora Knecktys, Isabella Chetik
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="sommerfest24">Einladung zum Sommerfest: SPORT - SPIEL - SPASS / 75 Jahre organisierter Sport im Rheinland</h2>
+                <p>
+                    <em>13. Juni 2024</em><br>
+                    Liebe Vereinsmitglieder,<br><br>
+                    heute auf den Tag wird der Sportbund Rheinland 75 Jahre alt!<br>
+                    Aber nicht nur wir feiern in diesem Jahr das 75-jährige Jubiläum sondern auch eine Vielzahl unserer Fachverbände.<br>
+                    Daher feiert der Sportbund Rheinland am <b>Samstag, den 29. Juni 2024</b> gemeinsam mit den Fachverbänden Fußball, Leichtathletik, Handball, Rudern, Tischtennis, Turnen und dem Bildungswerk Sport 75 Jahre organisierten Sport im Rheinland.
+                    Wir möchten mit Ihnen Sport, Spiel und Spaß teilen. <b>Ab 13 Uhr</b> können Sie gemeinsam mit Ihrer Familie, Ihres Vereinsvorstandes oder Ihrer Sportgruppe in der <b>Koblenzer Rheinau und auf den Rheinwiesen</b> die verschiedensten Sportarten und -spiele ausprobieren.
+                    <br>Natürlich soll dieser Tag auch als Netzwerktreffen dienen, sodass Sie genügend Raum haben, sich untereinander auszutauschen.
+                    Für das leibliche Wohl ist bestens gesorgt. Um 18 Uhr wird das erste Achtelfinal-Spiel der Fußball-EM auf unserer RPR1.-Bühne übertragen, um 20 Uhr endet die Veranstaltung.
+                    <br><br>Bitte melden Sie sich bis zum 24.06.2024 über unser Online-Formular an.
+                    <br><br>
+                    Mit freundlichen Grüßen,<br>
+                    Monika Sauer<br>
+                    Präsidentin des Sportbundes Rheinland e.V.
+                    <br><br>
+                </p>
+                <p>
+                    <embed align="center" src="images/Einladung_Sommerfest_Web.pdf" width="400px" height="600px" margin-left="auto" margin-right="auto" />
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="kurpokal24">Bronze, Silber und auch Gold für die Rollsportlerinnen des TV Weitersburg</h2>
+                <figure class="picRight">
+                    <img src="images/kurpokal241.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Die Trainingsgemeinschaft TVW und SFHG">
+                </figure>
+                <p>
+                    <em>11. Juni 2024</em><br>
+                    Mit drei Starterinnen nahm der TVW am vergangenen Samstag beim Kürpokal teil. Bereits am Morgen machten sich die Teilnehmer, Eltern und Trainer gemeinsam in einem Auto auf den Weg nach Mainz. Schon kurz nach der Ankunft fand das Einlaufen mit den insgesamt 120 Teilnehmern statt. Danach musste sich Merle schnell umziehen, denn sie startete im ersten Wettbewerb des Tages. Die jüngsten Teilnehmer, die Gruppe Mini 2, starteten zu viert. Hier belegte Merle Wilhelmi einen tollen zweiten Platz. Nach der Mittagspause ging dann die zweite Läuferin des TVW an den Start.<br>
+                    <br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/kurpokal242.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die Teilnehmerinnen mit der Trainerin">
+                </figure>
+                <p>
+                    In der Gruppe Freiläufer 2 konnte sich Mia Bach unter den 5 Starterinnen beweisen und belegt einen grandiosen ersten Platz. Gold für Mia! Erst nach einem langen Tag konnte Sophie Geißler ihre Kür am Abend präsentieren. Die Lauffläche wurde unter den Temperaturen des Tages am Abend sehr rutschig, so dass viele der Läufer Probleme hatten. Auch bei Sophie lief nicht alles perfekt. Trotzdem konnte sie sich den dritten Platz in der Nachwuchsklasse Damen sichern. Die Kinder unterstützen sich den ganzen Tag gegenseitig und halfen sich bei ihrer Aufregung und Anspannung. So ging ein langer, aber schöner Tag zu Ende. Nach der Siegerehrung machten sich die Weitersburger gemeinsam auf den Heimweg und waren gegen 22:30 Uhr zurück.
+                    <br><br>
+                <!-- </p>
+                <figure class="picRight">
+                    <img src="images/kurpokal243.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die Teilnehmerinnen auf dem Siegertreppchen">
+                </figure>
+                <p> -->
+                    Es bleibt spannend, ob die Kinder ihre Leistung bei der Landesmeisterschaft am 22. Juni 2024 in Landau halten oder sogar noch verbessern können. Herzlichen Glückwünsch für die tollen Platzierungen und viel Glück in Landau.
+                    <br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="dsenm24">TG Bendorf-Weitersburg: 10. Meistertitel für Maike Salewski</h2>
+                <figure class="picLeft">
+                    <img src="images/dsenm24_1.jpg" style="width:300px" class="figure-img img-fluid"
+                         alt="Das Siegertreppchen">
+                </figure>
+                <p>
+                    <em>27. Mai 2024</em><br>
+                    Mit einem Sieg, einem 6. und einem 11. Platz kehrten die Senioren- Turnerinnen der TG Bendorf- Weitersburg von den Deutschen Seniorenmeisterschaften in Iffezheim zurück.
+                    <br>
+                    Insgesamt 10-mal stand Maike Salewski bei den Deutschen Seniorenmeisterschaften auf dem obersten Treppchen – eine grandiose Leistung!
+                    <br><br>
+                </p>
+                <figure class="picRight">
+                    <img src="images/dsenm24_2.jpg" style="width:200px" class="figure-img img-fluid"
+                         alt="Maike Salewski">
+                    <figcaption>Maike Salewski</figcaption>
+                </figure>
+                <p>
+                    Dabei ist ein Sieg auch für sie nicht selbstverständlich: die Leistungsdichte bei den Seniorenmeisterschaften ist sehr groß und nur ein fehlerfreier Vortrag an allen vier Geräten führt zum Erfolg.
+                    <br>
+                    Dies meisterte Maike in Iffezheim mit Bravour, und turnte ihre mit Schwierigkeiten gespickten Übungen „genau auf den Punkt“. Insbesondere an der Bank, ihrem Paradegerät, glänzte sie u.a. mit freiem Rad auf dem Gerät und wurde mit der Höchstpunktzahl von 15,2 Punkten belohnt, aber auch am Stufenbarren und dem Boden erzielte sie die meisten Punkte ihrer Altersklasse W 55.
+                    <br><br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/dsenm24_3.jpg" style="width:200px" class="figure-img img-fluid"
+                         alt="Beate Wingender und Katja Krämer">
+                    <figcaption>Beate Wingender und Katja Krämer</figcaption>
+                </figure>
+                <p>
+                    Ebenfalls sehr zufrieden mit ihren Leistungen zeigten sich Beate Wingender (Platz 6 in der Altersklasse W55, zweithöchste Wertung am Boden) und Katja Krämer (Platz 11 in der AK W 50).
+                    <br>
+                    Neben dem sportlichen spielt der soziale Aspekt bei Deutschen Seniorinnen- und Senioren-Meisterschaften eine große Rolle. Das Wiedersehen mit Bekannten aus ganz Deutschland sowie die Party am Abend runden das Erlebnis positiv ab. Dabei sorge das Ambiente der weltberühmten Galopprennbahn für ein besonderes Flair. Der ausrichtende TV Iffezheim hatte für eine hervorragende Organisation gesorgt.
+                    <br><br><br><br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="beitrag">Neuerung zum Beitragseinzug: Einzug nur noch vierteljährlich</h2>
+                <p>
+                    <em>26. Mai 2024</em><br>
+                    Liebe TVW- Mitglieder,
+                    <br><br>
+                    aus organisatorischen Gründen musste der TVW die Taktung der Beitragseinzüge vereinheitlichen.<br>
+                    Der Vereinsbeitrag wird  - auf Empfehlung der Mitgliederversammlung  2023 - nunmehr von allen Mitgliedern vierteljährlich eingezogen. Alle, die bisher jährlich oder halbjährlich bezahlt haben, sind von dieser Änderung betroffen.<br>
+                    Die Umstellung erfolgte zum 2. Quartal 2024.<br>
+                    Diese Maßnahme war dringend notwendig, denn sie verringert den Arbeitsaufwand der Mitgliederbetreuung erheblich.
+                    <br><br>
+                    Wir hoffen auf Ihr/Euer Verständnis!
+                    <br><br>
+                    Mit sportlichen Grüßen,<br>
+                    der Vorstand des TV Weitersburg
+                    <br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="kirmes24">TV Weitersburg beim Kirmesumzug</h2>
+                <figure class="picRight">
+                    <img src="images/kirmes241.jpg" style="width:222px" class="figure-img img-fluid"
+                         alt="Die teilnehmenden Rollkunstläuferinnen">
+                </figure>
+                <p>
+                    <em>13. Mai 2024</em><br>
+                    Mit einer großen Gruppe nahm der TV Weitersburg am traditionellen Kirmesumzug teil. Ca. 60 Kinder, Jugendliche und Erwachsene präsentierten den Verein in seiner Vielfalt: Die Allerjüngsten radelten mit bunt geschmückten Fahrrädern und Rollern durch den Ort oder halfen dabei, die große Fahne mit den vier „F“`s zu tragen.
+                    <br><br>
+                </p>
+                <figure class="picLeft">
+                    <img src="images/kirmes242.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Der TVW bunt vertreten">
+                </figure>
+                <p>
+                    Die größeren Turnkinder legten viele Meter radschlagend oder im Handstand zurück und die Body-Fit-Frauen absolvierten unterwegs ein Workout mit Hanteln und anderen Fitnessgeräten. Erstmals mit dabei waren die Rollkunstläuferinnen in ihren wunderschönen bunten Schaulauf-Kostümen und zeigten ihr Können auf Weitersburgs Straßen.
+                    <br>
+                    Insgesamt bot der TVW wieder ein buntes Bild. An der Eierkrone angekommen freuten sich alle Aktiven über Fahrchips für die Kirmesattraktionen.
+                    <br><br><br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="dancecomp24">Auftritt der Dance Kids Tanzgruppen bei der zweiten Dance Competition</h2>
+                <figure class="picRight">
+                    <img src="images/dancecomp24.jpg" style="width:333px" class="figure-img img-fluid"
+                         alt="Die Tänzer*innen im Kostüm">
+                </figure>
+                <p>
+                    <em>13. Mai 2024</em><br>
+                    Ende April hatten die Mädchen der Dance Kids Tanzgruppen einen ganz besonderen Auftritt: die zweite Dance Competition in Urmitz stand an. Bereits im letzten Jahr haben die Dance Kids Maxis daran teilgenommen. In diesem Jahr waren die Minis zum ersten Mal mit ihrem Pop Tanz „Tick Tock“ mit dabei. Viele Eltern, Geschwister, Freunde und Verwandte waren mitgefahren, um die Mädels vor Ort zu unterstützen und kräftig anzufeuern. Das Programm war wie bereits im letzten Jahr auch bunt und abwechslungsreich und die beiden Auftritte der Dance Kids wurden mit viel Applaus gewürdigt. Am Ende gab es für alle Kids Medaillen und die Zusage, dass sie auch im nächsten Jahr wieder mit dabei sein möchten.
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+            
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="amgv24">Einladung zur außerordentlichen Mitgliederversammlung am 17. Mai 2024</h2>
+                <p>
+                    <em>5. Mai 2024</em><br>
+                    Der Turnverein 1891 Weitersburg lädt seine Mitglieder zu einer außerordentlichen Mitgliederversammlung gemäß § 8 der Vereinssatzung ein.
+                    <br>
+                    Die Versammlung findet statt am <b>17. Mai 2024 um 20.00 Uhr im Pfarrsaal der Katholischen Kirchegemeinde</b> (gegenüber der Pfarrkirche).
+                    <br><br>
+                    Tagesordnung:
+                </p>
+                <ol>
+                    <li>Eröffnung/Begrüßung</li>
+                    <li>Feststellung der Beschlussfähigkeit</li>
+                    <li>Antrag des Vorstands auf Freigabe von veranschlagten Reparaturkosten mit anschließender Abstimmung</li>
+                    <li>Sonstiges/Schließen der Versammlung</li>
+                </ol>
+                <p>
                     Der Vorstand
                     <br><br>
                 </p>
@@ -516,6 +1264,62 @@
                 <p>
                     <em>13. Februar 2024</em><br>
                     Letzten Sonntag war die Aufregung groß bei unseren Dance Kids Tanzgruppen. Für 30 der knapp 40 Tänzerinnen stand der erste große Auftritt in 2024 an. Beim jährlich sehr beliebten Kinderkostümfest, das gemeinsam vom TV Weitersburg und dem Weitersburger Möhnenverein organisiert wird, zeigten die Dance Kids gleich drei ihrer Tänze. Für einige der Mädchen war es sogar der erste Auftritt überhaupt. Wie immer überzeugten sie das Publikum mit ihren coolen Performances und der synchronen Leistung. Man hat gemerkt, dass ihnen das Tanzen viel Spaß bereitet und in den Gruppen eine gute Harmonie und Stimmung herrscht. Am Ende waren sich alle sicher, dass sich auch im nächsten Jahr bei diesem schönen und bunten Event wieder mit dabei sein möchten.
+                    <br><br>
+                </p>
+            </div>
+            <!-- Artikel Ende -->
+
+
+            <!-- Artikel Anfang -->
+            <div class="info">
+                <h2 id="sperrung">Sperrung der Vereinshalle bis auf Weiteres: Schaden an der Dachkonstruktion der Turnhalle</h2>
+                <p>
+                    <em>14. Dezember 2023</em><br>
+                    Liebe Sportler*innen, <br>
+                    Anfang November bemerkten wir einen Riss in einem der Tragbalken der Dachkonstruktion unserer Halle in der Bendorfer Straße. Der hinzu gerufene Statiker riet aus Sicherheitsgründen zu einer Sperrung der Halle für den Sportbetrieb, was durch den Vorstand unverzüglich umgesetzt wurde.
+                    <br>
+                    Zum Glück stellte sich heraus, dass der Schaden reparabel ist. Allerdings muss dafür seitens der beauftragten Prüfgesellschaft eine exakte statische Berechnung und ein Sanierungskonzept erstellt werden. Aus Kapazitätsgründen kann diese Vorarbeit dort erst ab Januar erfolgen und wird frühestens im Februar 2024 abgeschlossen sein.
+                    <br>
+                    Erst dann wissen wir, in welcher Art und Weise die Reparatur erfolgen kann. In der Folge sind Angebote von Fachfirmen einzuholen; gegebenenfalls muss auch über eine Finanzierung der Maßnahmen entschieden werden. Wir rechnen also nicht damit, dass wir vor Ende März 2024 unsere wieder Halle nutzen können.
+                    <br>
+                    Der Vorstand hat noch am Tag der Sperrung der Halle erste Kontakte zu Ortsgemeinde, Grundschule, Pfarrgemeinde, dem Möhnenverein, dem Sportverein sowie dem Turnverein Vallendar aufgenommen, um diejenigen Sportangebote, die wir in unserer Halle durchführen, in andere Räumlichkeiten zu verlegen. Eine Übungsleiterin setzte sich mit der Verbandsgemeinde Vallendar in Verbindung mit dem Ziel, vorübergehend einen Raum in der Stadthalle belegen zu können.
+                    <br>
+                    Die Reaktionen aller Angesprochenen waren äußerst positiv, absolut unbürokratisch sowie in hohem Maße entgegenkommend, sodass wir die meisten unserer Sportangebote vorerst unverändert weiterführen können.
+                    <br>
+                    Der Turnverein Weitersburg bedankt sich herzlich bei allen daran Beteiligten, insbesondere:
+                    <ul>
+                        <li>
+                            der Ortsgemeinde Weitersburg, hier insbesondere Herrn Ortsbürgermeister Jochen Währ für die Zustimmung zu erweiterten Hallenzeiten in der Schulturnhalle
+                        </li>
+                        <li>
+                            der Grundschule Weitersburg, Herrn Schulleiter Stein für die Bereitschaft, uns die erweiterten Hallenzeiten einzuräumen
+                        </li>
+                        <li>
+                            dem Möhnenverein Lustige Weiber Weitersburg für die vorübergehende Überlassung eigener Hallenzeiten an den Turnverein
+                        </li>
+                        <li>
+                            dem Sportverein SV Victoria Weitersburg, ebenfalls für die vorübergehende Überlassung eigener Hallenzeiten
+                        </li>
+                        <li>
+                            der Stadt Vallendar für die Zurverfügungstellung eines Raums in der Stadthalle
+                        </li>
+                        <li>
+                            der Pfarrgemeinde St. Medard für die Überlassung des Pfarrsaals in Weitersburg
+                        </li>
+                        <li>
+                            dem Turnverein Vallendar für seine Bereitschaft, uns Zeiten in der vereinseigenen Turnhalle in Vallendar anzubieten
+                        </li>
+                        <li>
+                            unseren Mietern der Turnhalle Bendorfer Straße, die mit sehr viel Verständnis auf die zeitweise Schließung reagierten
+                        </li>
+                    </ul>
+                    und nicht zuletzt unseren Mitgliedern und Übungsleitern, die sich teilweise auf andere Übungszeiten und andere Räumlichkeiten einstellen müssen.
+                    <br>
+                    Die Art und Weise, in der die oben Genannten reagiert und geholfen haben, ist ein ermutigendes Zeichen der Solidarität. Der Vorstand des TV Weitersburg bedankt sich nochmals herzlich bei allen Genannten.
+                    <br>
+                    Sobald wir mehr über Art und Umfang der Reparaturmaßnahmen wissen, werden wir alle Beteiligten unverzüglich informieren.
+                    <br>
+                    Der Vorstand
                     <br><br>
                 </p>
             </div>
