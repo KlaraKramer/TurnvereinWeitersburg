@@ -37,16 +37,15 @@
  * Ist deine Artikelüberschrift da? Dann klicke auf sie.
  * Wirst du zu deinem Artikel geleitet? Dann überprüfe, dass alles gut aussieht.
 
-<!--
-### Build & Deployment
- * Commit:
- *   - Branch benennen z. B. feature/add-article-mein-artikel
- *   - Commit-Nachricht kurz und aussagekräftig: "Add article: Mein Artikel"
- * - Pull-Request:
- *   - Beschreibe Inhalt, evtl. Screenshots und Testanweisungen.
- *   - Verlinke relevante Issue-Nummern.
- * - CI/CD baut die Seite und deployed die Änderungen automatisch nach Merge (je nach Projekt).
 
+### Veröffentlichen
+ * Öffne [PLESK](https://s554.evanzo-server.de:8443/smb/file-manager/list)
+ * Öffne den httpdocs Ordner
+ * Ersetze die index.html Datei
+ * Öffne den style Ordner und ersetze die index.css Datei
+ * Öffne den images Ordner und lade deine neuen Bilder hoch
+
+<!--
 ### PR-Checklist (Kurz)
  * - [ ] Frontmatter vollständig und korrekt (title, date, summary, draft=false).
  * - [ ] Bilder vorhanden und optimiert; heroAlt gesetzt.
